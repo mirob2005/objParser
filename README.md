@@ -12,8 +12,12 @@ The data is stored using the ObjData class.
 .Obj Specification used: http://www.martinreddy.net/gfx/3d/OBJ.spec
 
 Array for vertices: [vertex][x,y,z]
+
 Array for vertex normals: [vertex][x,y,z] - Vertex index for normals not necessarily same as above
+
 Array for texture vertices: [vertex][x,y,z], z = 0.0000
+
 Array for faces [face][vertex][v/vt/vn]
+(Only triangles are being parsed, quads are not supported as of now)
 
 A few sample .obj files are included in the repo.
